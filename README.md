@@ -1,3 +1,6 @@
+> [!WARNING]
+> Koden er flyttet til [paw-arbeidssoekerregisteret-monorepo-intern](https://github.com/navikt/paw-arbeidssoekerregisteret-monorepo-intern/tree/main/apps/kafka-key-generator)
+
 # paw-kafka-key-generator
 
 Et enkelt API for å generere en unik id som skal brukes som "key" ved skriving til topics knyttet til arbeidssøkerregisteret. Tjenesten bruker PDL for å sikre at samme person får samme "key" uavhengig av hvilken "ident" som brukes. Dette er for å sikre at personer som feks bytter fra d-nummer til fødselsnummer får samme "key" og dermed havner i samme partisjon i Kafka.
